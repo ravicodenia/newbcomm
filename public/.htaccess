@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Rewrite requests to index.html if not a file, directory, or symlink
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+
+  # Redirect requests from a specific IP to a different URL
+  RewriteCond %{REMOTE_ADDR} ^192\.46\.213\.60$
+  RewriteRule ^truckstar/build(.*)$ http://192.46.213.60$1 [R,L]
+</IfModule>

@@ -1,0 +1,888 @@
+.error_msg {
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 14px;
+    background-color: #f34646;
+    color: white;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.green_btn {
+    background-color: #3bb19b;
+    color: white;
+    margin: 10px;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #3bb19b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.white_btn {
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    background-color: white;
+    border-radius: 20px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+  
+    .hero-image {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    opacity: 0.5;
+    z-index: -10;
+   }
+
+.footer-image{
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    opacity: 0.5;
+    z-index: -10;
+}
+
+.offering{
+    background: url(https://app.starbehaviors.com/StarBehaviorsLogoStar.jpg) no-repeat left top;
+    padding: 0px 10px 5px 25px;
+    margin: 0;
+    list-style: none;
+}
+.main-card {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-content {
+    position: relative;    
+}
+
+.offering-list {
+    padding-left: 10px;
+}
+
+
+
+.call-to-action {
+    color: rgb(250, 0, 0);
+}
+
+.call-to-action-sub-text {
+    color: rgb(0, 112, 192);
+}
+
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #3bb19b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.white_btn {
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    background-color: white;
+    border-radius: 20px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+
+input::-ms-reveal {
+    display: none;
+}
+.bod{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card-header {
+    background-color: rgb(225 163 12) !important;
+}
+.btn-primary{
+background-color: #e1a42c !important;
+    border-color: #e1a42c !important;
+} 
+
+.navbar-light {
+    background-color: #766df4 !important;
+}
+
+.oi-eye:before {
+    content: '\e065';
+}
+.admin-login-page {
+    position: relative;
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 426px) {
+    .admin-login-page {
+        width: 80%;
+    }
+}
+
+@media (min-width: 600px) {
+    .admin-login-page {
+        width: 50%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .admin-login-page {
+        width: 40%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .admin-login-page {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .admin-login-page {
+        width: 25%;
+    }
+}
+/* _content/StarBehaviors.Web/Pages/Assessment.razor.rz.scp.css */
+.assessment-page {
+    position: relative;
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    .assessment-page {
+        width: 80%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .assessment-page {
+        width: 70%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .assessment-page {
+        width: 60%;
+    }
+}
+@media (min-width: 1300px) {
+    .assessment-page {
+        width: 50%;
+    }
+}
+/* _content/StarBehaviors.Web/Pages/Index.razor.rz.scp.css */
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -10;
+}
+
+.main-card {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-content {
+    position: relative;    
+}
+
+.offering-list {
+    padding-left: 10px;
+}
+
+.offering {
+    background: url('https://app.starbehaviors.com/StarBehaviorsLogoStar.jpg') no-repeat left top;
+    padding: 0px 10px 5px 25px;
+    margin: 0;
+    list-style: none;
+}
+
+.call-to-action {
+    color: rgb(250, 0, 0);
+}
+
+.call-to-action-sub-text {
+    color: rgb(0, 112, 192);
+}
+
+.footer-image {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -10;
+}
+
+/* Tablet */
+@media (min-width: 426px) {
+    .main-card {
+        top: 16%;        
+    }
+}
+
+/* Laptop and Up */
+@media (min-width: 769px) {
+    .hero-image {
+        height: 280px;
+    }
+
+    .main-card {
+        top: 16%;
+        min-width: 30%;
+    }
+
+    .main-content {
+        max-width: 80%;
+    }
+
+    .main-content-header-section {
+        max-width: 75%;
+    }
+
+    .offering-list-card {
+        max-width: 75%;
+    }
+}
+/* _content/StarBehaviors.Web/Pages/Login.razor.rz.scp.css */
+/* Remove default show password icon in Edge and IE */
+input[b-muahx1w2k1]::-ms-reveal {
+    display: none;
+}
+
+.login-page[b-muahx1w2k1] {
+    position: relative;
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 426px) {
+    .login-page[b-muahx1w2k1] {
+        width: 80%;
+    }
+}
+@media (min-width: 600px) {
+    .login-page[b-muahx1w2k1] {
+        width: 50%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .login-page[b-muahx1w2k1] {
+        width: 40%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .login-page[b-muahx1w2k1] {
+        width: 30%;
+    }
+}
+@media (min-width: 1300px) {
+    .login-page[b-muahx1w2k1] {
+        width: 25%;
+    }
+}
+/* _content/StarBehaviors.Web/Pages/Partner.razor.rz.scp.css */
+.partner-page {
+    position: relative;
+    width: 100%;
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .partner-page {
+        width: 80%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .partner-page {
+        width: 60%;
+    }
+}
+@media (min-width: 1300px) {
+    .partner-page {
+        width: 50%;
+    }
+}
+/* _content/StarBehaviors.Web/Pages/PartnerAdd.razor.rz.scp.css */
+.partner-add-page {
+    position: relative;
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 426px) {
+    .partner-add-page {
+        width: 82%;
+    }
+}
+
+@media (min-width: 600px) {
+    .partner-add-page {
+        width: 52%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .partner-add-page {
+        width: 42%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .partner-add-page {
+        width: 32%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .partner-add-page {
+        width: 27%;
+    }
+}
+/* _content/StarBehaviors.Web/Pages/Partners.razor.rz.scp.css */
+.partners-page {
+    position: relative;
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    .partners-page {
+        width: 50%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .partners-page {
+        width: 40%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .partners-page {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .partners-page {
+        width: 30%;
+    }
+}
+/* _content/StarBehaviors.Web/Pages/Register.razor.rz.scp.css */
+/* Remove default show password icon in Edge and IE */
+input::-ms-reveal {
+    display: none;
+}
+
+.register-page {
+    position: relative;
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 426px) {
+    .register-page {
+        width: 82%;
+    }
+}
+@media (min-width: 600px) {
+    .register-page {
+        width: 52%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .register-page {
+        width: 42%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .register-page {
+        width: 32%;
+    }
+}
+@media (min-width: 1300px) {
+    .register-page {
+        width: 27%;
+    }
+}
+
+
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1:focus {
+    outline: none;
+}
+
+a, .btn-link {
+    color: #0071c1;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.content {
+    padding-top: 1.1rem;
+}
+
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #26b050;
+}
+
+.invalid {
+    outline: 1px solid red;
+}
+
+.validation-message {
+    color: red;
+}
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+
+
+
+    .blazor-error-boundary::after {
+        content: "An error has occurred."
+    }
+  
+
+
+/* _content/StarBehaviors.Web/Pages/AdminLogin.razor.rz.scp.css */
+/* Remove default show password icon in Edge and IE */
+input::-ms-reveal {
+    display: none;
+}
+
+.admin-login-page {
+    position: relative;
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 426px) {
+    .admin-login-page {
+        width: 80%;
+    }
+}
+
+@media (min-width: 600px) {
+    .admin-login-page {
+        width: 50%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .admin-login-page {
+        width: 40%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .admin-login-page {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .admin-login-page {
+        width: 25%;
+    }
+}
+/* _content/StarBehaviors.Web/Pages/Assessment.razor.rz.scp.css */
+.assessment-page {
+    position: relative;
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    .assessment-page {
+        width: 80%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .assessment-page {
+        width: 70%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .assessment-page {
+        width: 60%;
+    }
+}
+@media (min-width: 1300px) {
+    .assessment-page {
+        width: 50%;
+    }
+}
+/* _content/StarBehaviors.Web/Pages/Index.razor.rz.scp.css */
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -10;
+}
+
+.main-card {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-content {
+    position: relative;    
+}
+
+.offering-list {
+    padding-left: 10px;
+}
+
+.offering {
+    background: url('https://app.starbehaviors.com/StarBehaviorsLogoStar.jpg') no-repeat left top;
+    padding: 0px 10px 5px 25px;
+    margin: 0;
+    list-style: none;
+}
+
+.call-to-action {
+    color: rgb(250, 0, 0);
+}
+
+.call-to-action-sub-text {
+    color: rgb(0, 112, 192);
+}
+
+.footer-image {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -10;
+}
+
+/* Tablet */
+@media (min-width: 426px) {
+    .main-card {
+        top: 16%;        
+    }
+}
+
+/* Laptop and Up */
+@media (min-width: 769px) {
+    .hero-image {
+        height: 280px;
+    }
+
+    .main-card {
+        top: 16%;
+        min-width: 30%;
+    }
+
+    .main-content {
+        max-width: 80%;
+    }
+
+    .main-content-header-section {
+        max-width: 75%;
+    }
+
+    .offering-list-card {
+        max-width: 75%;
+    }
+}
+/* _content/StarBehaviors.Web/Pages/Login.razor.rz.scp.css */
+/* Remove default show password icon in Edge and IE */
+input[b-muahx1w2k1]::-ms-reveal {
+    display: none;
+}
+
+.login-page[b-muahx1w2k1] {
+    position: relative;
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 426px) {
+    .login-page[b-muahx1w2k1] {
+        width: 80%;
+    }
+}
+@media (min-width: 600px) {
+    .login-page[b-muahx1w2k1] {
+        width: 50%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .login-page[b-muahx1w2k1] {
+        width: 40%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .login-page[b-muahx1w2k1] {
+        width: 30%;
+    }
+}
+@media (min-width: 1300px) {
+    .login-page[b-muahx1w2k1] {
+        width: 25%;
+    }
+}
+/* _content/StarBehaviors.Web/Pages/Partner.razor.rz.scp.css */
+.partner-page {
+    position: relative;
+    width: 100%;
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .partner-page {
+        width: 80%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .partner-page {
+        width: 60%;
+    }
+}
+@media (min-width: 1300px) {
+    .partner-page {
+        width: 50%;
+    }
+}
+/* _content/StarBehaviors.Web/Pages/PartnerAdd.razor.rz.scp.css */
+.partner-add-page {
+    position: relative;
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 426px) {
+    .partner-add-page {
+        width: 82%;
+    }
+}
+
+@media (min-width: 600px) {
+    .partner-add-page {
+        width: 52%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .partner-add-page {
+        width: 42%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .partner-add-page {
+        width: 32%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .partner-add-page {
+        width: 27%;
+    }
+}
+/* _content/StarBehaviors.Web/Pages/Partners.razor.rz.scp.css */
+.partners-page {
+    position: relative;
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    .partners-page {
+        width: 50%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .partners-page {
+        width: 40%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .partners-page {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .partners-page {
+        width: 30%;
+    }
+}
+/* _content/StarBehaviors.Web/Pages/Register.razor.rz.scp.css */
+/* Remove default show password icon in Edge and IE */
+input::-ms-reveal {
+    display: none;
+}
+
+.register-page {
+    position: relative;
+    width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 426px) {
+    .register-page {
+        width: 82%;
+    }
+}
+@media (min-width: 600px) {
+    .register-page {
+        width: 52%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+    .register-page {
+        width: 42%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .register-page {
+        width: 32%;
+    }
+}
+@media (min-width: 1300px) {
+    .register-page {
+        width: 27%;
+    }
+}
+
+
+
+
+

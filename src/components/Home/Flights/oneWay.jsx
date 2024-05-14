@@ -3,6 +3,9 @@ import * as apiService from "../../../services";
 import $ from 'jquery';
 import Select2Cdn from './select2cdn';
 
+import {RangeDatePicker} from "react-google-flight-datepicker";
+import "react-google-flight-datepicker/dist/main.css";
+
 const ReturnWay = () => {
   const [selectedValue, setSelectedValue] = useState('');
 
@@ -146,75 +149,69 @@ const ReturnWay = () => {
 
             <div className="col-lg-3" id="div_calendar_oneway_return">
             <div className="row">
-            <div className="col-lg-6">
-            <div className="row">
-            <div className="col-12">
-              <table className="flightheadertbl">
-                <thead>
-                  <tr>
-                    {/* <td>Dep. <i className="fa-solid fa-caret-down"></i></td> */}
-                    <td className="text-end">
-                      <select name="pickdeparture">
-                        <option selected="">Any Time</option>
-                        <option value="Spanish">Morning</option>
-                      </select>
-                    </td>
-                  </tr>
-                </thead>
-                <tbody>
-                </tbody>
-              </table>
-            </div>
-            </div>
-            <div id="pickCalOneWay" className="srchCon">
-            <input id="datepicker" type="hidden" className="hasDatepicker" />
-            <div className="srchRow">
-              <div className="srchCol">
-              <div className="mb-1"><span className="srchsml">Departure <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></span></div>
-                <div style={{display:'flex', alignItems:'center',gap:'3px', flexWrap:'wrap'}}>
-                    {/* <input type="datetime" name="" id="" /> */}
-                    <span className="srchTitle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"/></svg> 19 </span><span className="srchLabel">Apr'24</span> </div>
-                <div>
-                <span className='calendar-sec'><input type="date" name="" id="dateInput" min={minDate} /></span>
+                            <div className="col-lg-6">
+                              <div className="row">
+                                <div className="col-12">
+                                  <table className="flightheadertbl">
+                                    <thead>
+                                      <tr>
+                                        {/* <td>Dep. <i className="fa-solid fa-caret-down"></i></td> */}
+                                        <td className="text-end">
+                                          <select name="pickdeparture">
+                                            <option selected="">Any Time</option>
+                                            <option value="Spanish">Morning</option>
+                                          </select>
+                                        </td>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                             
+                            </div>
+                            <div className="col-lg-6" id="div_flight_returncal">
+                              <div className="row">
+                                <div className="col-12">
+                                  <table className="flightheadertbl">
+                                    <thead>
+                                      <tr>
+                                        <td className="text-end">
+                                          <select name="pickdeparture">
+                                            <option selected="">Any Time</option>
+                                            <option value="Spanish">Morning</option>
+                                          </select>
+                                        </td>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                             
 
-                <span className="srchsml textTrim">Friday</span> </div>
-              </div>
-
+                                 
+                            </div>
+                          </div>
+            
               
-            </div>
-            </div>
-            </div>
-            <div className="col-lg-6" id="div_flight_returncal">
-            <div className="row">
-            <div className="col-12">
-              <table className="flightheadertbl">
-                <thead>
-                  <tr>
-                    {/* <td>Retutn <i className="fa-solid fa-caret-down"></i></td> */}
-                    <td className="text-end">
-                      <select name="pickdeparture">
-                        <option selected="">Any Time</option>
-                        <option value="Spanish">Morning</option>
-                      </select>
-                    </td>
-                  </tr>
-                </thead>
-                <tbody>
-                </tbody>
-              </table>
-            </div>
-            </div>
-            <div className="srchCon">
-            <div className="srchRow">
-              <div id="returncalvis" className="srchCol" >
-              <div className="mb-1"><span className="srchsml">Return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></span></div>
-                <div className="addReturndate">Tap to add a return date for bigger discounts</div>
-              </div>
+            <div className="row material-calendar p-0">
+                            <div className=" d-flex justify-content-between ">
+                           <span className="srchsml">Departure <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></span>
+                           <span className="srchsml">Return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></span>
 
-            </div>
-            </div>
-            </div>
-            </div>
+                           </div>
+
+
+
+                            <RangeDatePicker
+                                    startDate={new Date(2024, 5, 15)}
+                                    endDate={new Date(2024, 6, 1)}
+                                  />
+                          </div>
+           
             </div>
 
             <div className="col-lg-2">
@@ -382,6 +379,7 @@ const ReturnWay = () => {
             </div>
             </div>
             </div>
+
               
   );
 };

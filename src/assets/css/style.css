@@ -22,7 +22,7 @@
 .back-to-top.active {
   opacity: 1;
   visibility: visible;
-} 
+}
 
 
 div#rdw-wrapper-6335::-webkit-scrollbar {
@@ -1817,6 +1817,7 @@ span.MuiTabs-indicator {
 
 .material-calendar span.srchsml {
     min-width: 114px!important;
+    min-height: 36px;
 }
 
 .material-calendar .MuiTextField-root input {
@@ -1862,8 +1863,14 @@ span.MuiTabs-indicator {
     min-width: 111px;
     border: 0!important;
     margin-left: 0px;
-    min-width: 116px;
+    min-width: 116px!important;
     min-height: 60px;
+    margin: 0!important;
+    max-width: 116px!important;
+}
+
+.react-google-flight-datepicker .selected-date, .react-google-flight-datepicker .date{
+    align-items: flex-start!important;
 }
 
 .react-google-flight-datepicker .dialog-date-picker{
@@ -1881,6 +1888,13 @@ span.MuiTabs-indicator {
 .react-google-flight-datepicker .icon-calendar {
     fill: #1c1c1d!important;
     margin-right: 6px!important;;
+}
+
+.react-google-flight-datepicker .dialog-date-picker.open .date {
+    min-height: 30px !important;
+    min-width: 179px!important;
+    display: flex;
+    padding-top: 12px!important;
 }
 
 @media(max-width:990px){
